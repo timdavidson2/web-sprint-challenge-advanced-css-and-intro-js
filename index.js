@@ -228,9 +228,9 @@ Create a function called `getArtistByIndex` that takes two arguments:
  * it will return `The artist at index 0 is Amedeo Modigliani`
 */
 function getArtistByIndex() {
-      
+      artists[0]["name"];
 
-    return `The artist at index  is `;
+    return `the artist at index  is `;
   }  
 console.log(getArtistByIndex);
 
@@ -243,7 +243,7 @@ example born in 1901 and died in 1959 - included / born in 1889 and died in 1925
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(/*Your Code Here*/){
-  return artists["name"]
+  
 }
 
 
@@ -258,7 +258,8 @@ Create a function called `removeArtist` that takes two arguments:
  * it will remove Amedeo Modigliani from our dataset and log the number 19.  
 */
 function removeArtist(/*Your Code Here*/) {
-   /*Your Code Here*/
+   artists.splice[0]
+   return
 }
    
 
@@ -278,9 +279,10 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 At the end, this function should return the new array with information added"*/
 
 function addArtist(){
-    /*Your Code Here*/
+    artists.push(20, "Tim Davidson", "1900 - Present", "Web Design", "American", "I am trying to add this to the array of artists. I hope it is successful.");
+    // return artists.pushed;
   }
-
+  console.log(addArtist()
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -293,10 +295,11 @@ and returns an array with names of artists who painted more than 100 paintings.
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
 function lotsOfArt(){
-  
-  return lotsOfArt(artists["paintings"] > 100);
-}
-console.log(lotsOfArt);
+  if(artists["paintings:"] > 100){
+    return artists["name:"];
+  }
+ }
+  console.log(lotsOfArt)
 
 
 
