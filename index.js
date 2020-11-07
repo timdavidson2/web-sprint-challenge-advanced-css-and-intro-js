@@ -228,9 +228,7 @@ Create a function called `getArtistByIndex` that takes two arguments:
  * it will return `The artist at index 0 is Amedeo Modigliani`
 */
 function getArtistByIndex() {
-      artists[0]["name"];
-
-    return `the artist at index  is `;
+   return `the artist at index ${artists[0]} is ${artists["name"]} `;
   }  
 console.log(getArtistByIndex);
 
@@ -257,11 +255,10 @@ Create a function called `removeArtist` that takes two arguments:
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset and log the number 19.  
 */
-function removeArtist(/*Your Code Here*/) {
-   artists.splice[0]
-   return
+function removeArtist() {
+   let popped = artists.pop([19])
 }
-   
+   console.log(popped)
 
 /**
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -279,10 +276,9 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 At the end, this function should return the new array with information added"*/
 
 function addArtist(){
-    artists.push(20, "Tim Davidson", "1900 - Present", "Web Design", "American", "I am trying to add this to the array of artists. I hope it is successful.");
-    // return artists.pushed;
-  }
-  console.log(addArtist()
+    let pushed = artists.push(20, "Tim Davidson", "1900 - Present", "Web Design", "American", "I am trying to add this to the array of artists. I hope it is successful.", "Nothing",0);
+ }
+  console.log(artists.length)    
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -295,8 +291,9 @@ and returns an array with names of artists who painted more than 100 paintings.
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
 function lotsOfArt(){
-  if(artists["paintings:"] > 100){
-    return artists["name:"];
+
+    if(artists["paintings"] >= 100){
+    return artists["name"];
   }
  }
   console.log(lotsOfArt)
