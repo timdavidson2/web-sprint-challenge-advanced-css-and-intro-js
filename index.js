@@ -228,9 +228,10 @@ Create a function called `getArtistByIndex` that takes two arguments:
  * it will return `The artist at index 0 is Amedeo Modigliani`
 */
 function getArtistByIndex() {
-   return `the artist at index ${artists[0]} is ${artists["name"]} `;
+   
+  return `the artist at index ${this.id} is ${this.name} `;
   }  
-console.log(getArtistByIndex);
+console.log();
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -240,7 +241,8 @@ it returns an array with names of artists who were born in and died in 20th cent
 example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/*Your Code Here*/){
+function get20s(array){
+
   
 }
 
@@ -292,10 +294,8 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(){
-
-    if(artists["paintings"] >= 100){
-    return artists["name"];
+function lotsOfArt(array, paintings){
+    
   }
  }
   console.log(lotsOfArt)
