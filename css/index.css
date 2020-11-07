@@ -150,6 +150,7 @@ button:hover{
     }
     .artist{
         width: 100%;
+        font-size:1rem;
     }
     
 }
