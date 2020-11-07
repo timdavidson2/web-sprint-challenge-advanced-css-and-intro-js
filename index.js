@@ -255,10 +255,11 @@ Create a function called `removeArtist` that takes two arguments:
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset and log the number 19.  
 */
-function removeArtist() {
-   let popped = artists.pop([19])
+function removeArtist(array, id) {
+  array.splice(0, 1);
+  return array.length; 
 }
-   console.log(popped)
+  console.log(removeArtist(artists, 0)); 
 
 /**
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -275,10 +276,11 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(){
-    let pushed = artists.push(20, "Tim Davidson", "1900 - Present", "Web Design", "American", "I am trying to add this to the array of artists. I hope it is successful.", "Nothing",0);
+function addArtist(array, id, name, years, genre, nationality, bio){
+    array.push({id, name, years, genre, nationality, bio});
+    return array;
  }
-  console.log(artists.length)    
+   console.log(addArtist(artists, 20, 'Tim Davidson', '1900 - present', 'Web Design', 'American', 'I am trying to add this to the array. I hope it works.'));    
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
