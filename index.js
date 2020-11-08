@@ -227,11 +227,10 @@ Create a function called `getArtistByIndex` that takes two arguments:
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`
 */
-function getArtistByIndex() {
+function getArtistByIndex(array,index) {
    
-  return `the artist at index ${this.id} is ${this.name} `;
+  return  `The artist at index ${array.index }is ${array[index].name}'; 
   }  
-console.log();
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
