@@ -227,10 +227,10 @@ Create a function called `getArtistByIndex` that takes two arguments:
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`
 */
-function getArtistByIndex(array,index) {
-   
-  return  `The artist at index ${array.index }is ${array[index].name}'; 
-  }  
+function getArtistByIndex(array, index) {
+    return `The artist at index ${array[index]} is ${this[name]}`;
+   }
+   console.log(getArtistByIndex(artists,[0])); 
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -298,8 +298,7 @@ function lotsOfArt(array, paintings){
       return array["name"];
     }
   }
-
-  console.log(lotsOfArt)
+  console.log(lotsOfArt);
 
 
 
